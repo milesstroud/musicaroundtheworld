@@ -61,7 +61,7 @@ Position | Track Name | Artist | Streams | URL | Date | Region | Danceability | 
 Now for the fun stuff...analysis!
 
 # Linear Regression
-From my linear regression analyses analyzing the degree to which a song’s chart position changes as a function of the song’s danceability, I discovered a significant negative association (F(1,5998) = 41.1, p < .001), and R<sup>2</sup> = .006. This means as danceability went down, chart position went **up**, which is not ideal when a top spot on the charts is actually a low number. Unsurprisingly, the people want to dance!
+Switching back to R, I performed some basic linear regressions. From my linear regression analyses analyzing the degree to which a song’s chart position changes as a function of the song’s danceability, I discovered a significant negative association (F(1,5998) = 41.1, p < .001), and R<sup>2</sup> = .006. This means as danceability went down, chart position went **up**, which is not ideal when a top spot on the charts is actually a low number. Unsurprisingly, the people want to dance!
 
 ![picture](figures/Danceability_corr.png)
 
