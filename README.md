@@ -61,5 +61,21 @@ Position | Track Name | Artist | Streams | URL | Date | Region | Danceability | 
 Now for the fun stuff...analysis!
 
 # Linear Regression
-From my linear regression analyses analyzing the degree to which a song’s chart position changes as a function of the song’s danceability, I discovered a significant negative association (F(1,5998) = 41.1, p < .001), and R2 = .006. Unsurprisingly, the people want to dance!
+From my linear regression analyses analyzing the degree to which a song’s chart position changes as a function of the song’s danceability, I discovered a significant negative association (F(1,5998) = 41.1, p < .001), and R<sup>2</sup> = .006. This means as danceability went down, chart position went **up**, which is not ideal when a top spot on the charts is actually a low number. Unsurprisingly, the people want to dance!
 
+![picture](figures/Danceability_corr.png)
+
+With an R<sup>2</sup> of only .6% ofthe variation in chart position is explained by danceability. This does not provide strong evidence
+to support their consistent, reliable importance to defining a chart topping song.
+
+My second linear regression is based on the presumption that since hip-hop, a music form reliant on rhyming and heavy lyricism, is so prevalent in the United States top charts now, speechiness may be related to chart position. This proved true, showing a similar negative association to that of danceability, F(1,5998) = 70.14, p < .001.), and R<sup>2</sup> = .01. Now, since hip-hop's originated in the Bronx of New York, other countries may not resonate with it quite as much yet which may show itself in decreased speechiness for other countries. I felt this would be an interesting feature to look at by country.
+
+# Speechiness by Country
+
+When I broke down speechiness by the three countries I sampled (Argentina, Great Britain, and the United States) the difference was fasincating! It was clear the United States had much "speechier" music in the top charts, likely because of hip-hop's global presence. This cultural difference in speechiness was confirmed by auxiliary analyses (t-tests) testing the difference in mean speechiness between the United States and Great Britain (p < .001), as well as between that of English-speaking countries and a non-English speaking country (p < .001).
+
+![picture](figures/Speechiness_bars.png)
+
+We do see that Great Britain has a slight edge on Argentina in terms of speechiness, and this may be in part due to the rise of hip-hop there as well (especially in the form of grime hip-hop, with fruntrunners such as Stormzy and Skepta). 
+
+Finally, a quick dot plot grid chart allows us to get a crude look at the distribution of those speechy songs. It's clear that in the United States, songs high in speechiness were far more able to break top chart positions than in Great Britain, and definitely than in Argentina. 
