@@ -65,7 +65,7 @@ From my linear regression analyses analyzing the degree to which a song’s char
 
 ![picture](figures/Danceability_corr.png)
 
-With an R<sup>2</sup> of only .6% ofthe variation in chart position is explained by danceability. This does not provide strong evidence
+With an R<sup>2</sup> of only .006, only .6% of the variation in chart position is explained by danceability. This does not provide strong evidence
 to support their consistent, reliable importance to defining a chart topping song.
 
 My second linear regression is based on the presumption that since hip-hop, a music form reliant on rhyming and heavy lyricism, is so prevalent in the United States top charts now, speechiness may be related to chart position. This proved true, showing a similar negative association to that of danceability, F(1,5998) = 70.14, p < .001.), and R<sup>2</sup> = .01. Now, since hip-hop's originated in the Bronx of New York, other countries may not resonate with it quite as much yet which may show itself in decreased speechiness for other countries. I felt this would be an interesting feature to look at by country.
