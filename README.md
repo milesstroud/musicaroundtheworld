@@ -14,10 +14,10 @@ After adding columns of *NA*s in R for each audio feature to be examined, here's
 
 Position | Track Name | Artist | Streams | URL | Date | Region | Danceability | Duration | Instrumentalness | Speechiness | Tempo
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
-1 | Bad and Boujee (feat. Lil Uzi Vert) | Migos | 1371493 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2
-2 | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column
+1 | Bad and Boujee (feat. Lil Uzi Vert) | Migos | 1371493 | 4Km5HrUvYTaSUfiSGPJeQR | 1/1/17 | us | *NA* | *NA* | *NA* | *NA* | *NA*
+2 | Fake Love | Drake | 1180074 | 343YBumqHu19cGoGARUTsd | 1/1/17 | us | *NA* | *NA* | *NA* | *NA* | *NA*
 
-Since I need what's known as the "track ID" (the last section of numbers and letters in the URL after the /) to feed into our Python script to find audio features, I used a regex to find the important characters that started with a number.
+It is of note the data originally contained a full URL in the "URL" column. Since I need what's known as the "track ID" (the last section of numbers and letters in the URL after the /) to feed into our Python script to find audio features, I used a regex to find the important characters that started with a number.
 ```
 #Regular expression to remove the extraneous characters in the track ID, which is located at the end of the URL
 musica$URL <- regmatches(musica$URL, regexpr("[0-9].*", musica$URL, perl = TRUE))
@@ -55,8 +55,8 @@ And just like that, I've got a dataframe full of audio feature data!
 
 Position | Track Name | Artist | Streams | URL | Date | Region | Danceability | Duration | Instrumentalness | Speechiness | Tempo
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | -------------
-1 | Bad and Boujee (feat. Lil Uzi Vert) | Migos | 1371493 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2 | Content from cell 2
-2 | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column | Content in the second column
+1 | Bad and Boujee (feat. Lil Uzi Vert) | Migos | 1371493 | 4Km5HrUvYTaSUfiSGPJeQR | 1/1/17 | us | 0.927 | 343150 | 0 | 0.244 | 127.076
+2 | Fake Love | Drake | 1180074 | 343YBumqHu19cGoGARUTsd | 1/1/17 | us | 0.928 | 210937 | 0 | 0.287 | 134.007
 
 Now for the fun stuff...analysis!
 
