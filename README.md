@@ -78,4 +78,18 @@ When I broke down speechiness by the three countries I sampled (Argentina, Great
 
 We do see that Great Britain has a slight edge on Argentina in terms of speechiness, and this may be in part due to the rise of hip-hop there as well (especially in the form of grime hip-hop, with fruntrunners such as Stormzy and Skepta). 
 
-Finally, a quick dot plot grid chart allows us to get a crude look at the distribution of those speechy songs. It's clear that in the United States, songs high in speechiness were far more able to break top chart positions than in Great Britain, and definitely than in Argentina. 
+That being said, for what Great Britan currently lacks in speechiness, they more than make up for in instrumentalness. It seemed that chart-topping music in Great Britain was far more likely to be devoid of any lyrics (instrumental) than the United States or Argentina.
+
+
+
+
+
+Finally, a quick dot plot grid chart allows us to get a crude look at the distribution of those aforementioned "speechy" songs. It's clear that in the United States, songs high in speechiness were far more able to break top chart positions than in Great Britain, and definitely than in Argentina. 
+
+![picture](figures/Speechiness_dots.png)
+
+# Conclusion
+
+Well, that's all for this iteration! We learned that a danceable tune may lead to a chart-topper, which is no surprise. More interestingly, taking a look at speechiness by country allowed me to see some potential changes in the music landscape. Hip-hop, chock full of hard hitting flows and deep lyricism, may be playing an increasing role in the top charts. This makes me wonder what other audio feature may be more prevalent in other countries that aren't as big on speechiness. Songs in Great Britain's top charts were far more likely to trend towards being "instrumental", surprisingly untrue for Argentina. 
+
+Future iterations of this project will dive deeper into some other audio features, and hopefully sample more countries!
