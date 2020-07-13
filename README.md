@@ -81,7 +81,7 @@ We do see that Great Britain has a slight edge on Argentina in terms of speechin
 That being said, for what Great Britan currently lacks in speechiness, they more than make up for in instrumentalness. It seemed that chart-topping music in Great Britain was far more likely to be devoid of any lyrics (instrumental) than the United States or Argentina.
 
 
-![picture](figures/Instrumentalness_dots.png)
+![picture](figures/Instrumentalness_bars.png)
 
 
 Finally, a quick dot plot grid chart allows us to get a crude look at the distribution of those aforementioned "speechy" songs. It's clear that in the United States, songs high in speechiness were far more able to break top chart positions than in Great Britain, and definitely than in Argentina. 
