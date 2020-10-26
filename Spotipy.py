@@ -2,8 +2,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy.util as util
 import pandas as pd
-cid = '2cfb716804634481b678117914a9d6cd'
-secret = 'ecb207bc67d14a71a2841fbdef1bff6c'
+cid = ''
+secret = ''
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret = secret)
 music_data = pd.read_csv("/Users/ashley/Documents/Music_Data.csv")
 def find_data(song):
